@@ -12,3 +12,22 @@ dependencies{
 }
 
 ```
+
+### Insert Records
+
+```java
+
+@FormUrlEncoded
+@POST("/volleyapi/v1/insert.php")
+Call<Book> insert(@FieldMap Map<String, String> map);
+
+```
+
+### Display Records
+
+```java
+
+@GET("/volleyapi/v1/display.php")
+Call<List<Book>> displays();
+
+```
