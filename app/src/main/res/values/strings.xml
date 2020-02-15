@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Retrofit Book App</string>
+
+    <string-array name="subjects">
+
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>PHP</item>
+        <item>Android</item>
+        <item>HTML5</item>
+        <item>Javascript</item>
+        <item>Asp.Net</item>
+        <item>C++</item>
+        <item>Vb.Net</item>
+
+    </string-array>
+</resources>
