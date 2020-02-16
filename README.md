@@ -879,13 +879,13 @@ public class MainActivity extends AppCompatActivity {
 ### App Images
 
 <p align="left">
+
 <img src="https://github.com/apptech44/retrofit-book-app/blob/master/retrofit-home-activity.png" 
 width="160" height="380" />
-</p>
 
-<p align="left">
 <img src="https://github.com/apptech44/retrofit-book-app/blob/master/retrofit-add-activity.png" 
 width="160" height="380" />
+
 </p>
 
 <p align="right">
