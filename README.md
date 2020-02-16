@@ -875,3 +875,9 @@ public class MainActivity extends AppCompatActivity {
 </androidx.cardview.widget.CardView>
 
 ```
+
+### App Images
+
+<img src="https://github.com/apptech44/retrofit-book-app/blob/master/retrofit-detail-activity.png" data-canonical- width="200" height="400" />
+
+
