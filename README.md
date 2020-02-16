@@ -41,6 +41,36 @@ class RetrofitClient {
 
 ```
 
+### APIUtils 
+
+```java
+
+package com.example.retrofitbookapp.apiservice;
+
+public class APIUtils {
+
+    private APIUtils() {
+
+    }
+
+    private static final String API_URL = "http://10.0.2.2";
+
+    public static final String KEY_BOOK_ID = "id";
+    public static final String KEY_BOOK_NAME = "name";
+    public static final String KEY_AUTHOR_NAME = "author";
+    public static final String KEY_BOOK_SUBJECT = "subject";
+    public static final String KEY_BOOK_DESCRIPTION = "description";
+    public static final String KEY_BOOK_IMAGE_URL = "images";
+
+
+    public static ApiServices getApiService() {
+        return RetrofitClient.getClient(API_URL).create(ApiServices.class);
+    }
+}
+
+
+```
+
 ### Model Book 
 
 ```java
@@ -114,6 +144,36 @@ public class Book {
     public void setBookImage(String bookImage) {
         this.bookImage = bookImage;
     }
+}
+
+
+```
+
+### ApiService
+
+```java
+
+package com.example.retrofitbookapp.apiservice;
+
+import com.example.retrofitbookapp.model.Book;
+
+import java.util.List;
+import java.util.Map;
+
+import retrofit2.Call;
+import retrofit2.http.FieldMap;
+import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
+import retrofit2.http.POST;
+
+public interface ApiServices {
+
+    @FormUrlEncoded
+    @POST("/volleyapi/v1/insert.php")
+    Call<Book> insert(@FieldMap Map<String, String> map);
+
+    @GET("/volleyapi/v1/display.php")
+    Call<List<Book>> displays();
 }
 
 
@@ -475,36 +535,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-
-```
-
-### ApiService
-
-```java
-
-package com.example.retrofitbookapp.apiservice;
-
-import com.example.retrofitbookapp.model.Book;
-
-import java.util.List;
-import java.util.Map;
-
-import retrofit2.Call;
-import retrofit2.http.FieldMap;
-import retrofit2.http.FormUrlEncoded;
-import retrofit2.http.GET;
-import retrofit2.http.POST;
-
-public interface ApiServices {
-
-    @FormUrlEncoded
-    @POST("/volleyapi/v1/insert.php")
-    Call<Book> insert(@FieldMap Map<String, String> map);
-
-    @GET("/volleyapi/v1/display.php")
-    Call<List<Book>> displays();
-}
-
 
 ```
 
