@@ -5,12 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/secondary_text"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="4dp"
+    app:cardPreventCornerOverlap="false"
     app:cardUseCompatPadding="true">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/my_relative_layout"
         android:padding="5dp">
 
         <ImageView
@@ -60,6 +65,7 @@
             android:textColor="@color/primary_text" />
 
     </RelativeLayout>
+
 
 
 </androidx.cardview.widget.CardView>
