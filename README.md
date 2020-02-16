@@ -886,5 +886,7 @@ width="180" height="380" />
 width="180" height="380" />
 </p>
 
-<img align="right" src="https://github.com/apptech44/retrofit-book-app/blob/master/retrofit-detail-activity.png" 
+<p align="right">
+<img  src="https://github.com/apptech44/retrofit-book-app/blob/master/retrofit-detail-activity.png" 
 width="180" height="380" />
+</p>
